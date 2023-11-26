@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- Include the color-modes.js script -->
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <!-- Meta information -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+
+    <meta name="generator" content="Hugo 0.118.2" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Page title -->
+    <title>NewsLetter</title>
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#712cf9" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="d-flex align-items-center py-4">
+    <!-- Main content (Sign-in form) -->
+    <main class="form-signin w-100 m-auto">
+      <form method="post" action="/" onsubmit="return validateForm()">
+        <!-- Bootstrap logo -->
+        <div class="d-flex justify-content-center align-content-center">
+          <img
+            class="mb-4 img-fluid"
+            src="./NIZZY SOLUTIONS.png"
+            alt=""
+            width="72"
+            height="57"
+          />
+        </div>
+        <h1 class="h3 mb-3 fw-normal text-center fw-bold">NIZZY NEWSLETTER</h1>
+
+        <!-- First Name input -->
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            name="firstname"
+            id="firstname"
+            placeholder="First Name"
+          />
+          <label for="firstname">First Name</label>
+        </div>
+
+        <!-- Last Name input -->
+        <div class="form-floating">
+          <input
+            type="text"
+            name="lastname"
+            class="form-control"
+            id="lastname"
+            placeholder="Last Name"
+          />
+          <label for="lastname">Last Name</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-floating">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+          />
+          <label for="email">Email</label>
+        </div>
+
+        <!-- Sign-in button -->
+        <button class="btn w-100 py-2" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </main>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function validateForm() {
+        // Get input values
+        var firstname = document.getElementById("firstname").value.trim();
+        var lastname = document.getElementById("lastname").value.trim();
+        var email = document.getElementById("email").value.trim();
+
+        // Basic validation checks
+        if (firstname === "" || lastname === "" || email === "") {
+          alert("Please fill in all fields.");
+          return false;
+        }
+
+        // Additional validation checks for email (you can use a regular expression)
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // If all checks pass, allow the form to be submitted
+        return true;
+      }
+    </script>
+  </body>
+</html>
