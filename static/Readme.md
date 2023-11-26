@@ -1,4 +1,15 @@
-<h1>Email Subscription App using Mailchimp API</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscription App Readme</title>
+</head>
+
+<body>
+
+    <h1>Email Subscription App using Mailchimp API</h1>
 
     <p>This repository contains a simple Node.js application that enables users to subscribe to a Mailchimp mailing list. The application utilizes the Mailchimp API to seamlessly add new subscribers.</p>
 
@@ -55,3 +66,7 @@ const listId = "[Your Mailchimp List ID]";</code></pre>
     </ul>
 
     <p>Feel free to explore and enhance the functionality of this application as needed. If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.</p>
+
+</body>
+
+</html>
