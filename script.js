@@ -43,7 +43,7 @@ app.post("/", (req, res) => {
   // Options for the HTTP request to Mailchimp API
   const options = {
     method: "POST",
-    auth: "umairniazi:bbfe2c46f884fc925b3777e2af9f8540-us9",
+    auth: "umairniazi:88af2d84c40135b653c5ef4e279aac98-us9",
   };
 
   // Send the request to Mailchimp API
